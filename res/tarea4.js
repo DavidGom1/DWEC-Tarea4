@@ -66,6 +66,7 @@ class Banco {       // Punto 6
     constructor(nombre) {
         this.nombre = nombre;
         this.cuentas = [];
+        console.log(`Banco ${nombre} creado`);
     }
 
     crearCuenta(numero, saldoInicial) {   // Punto 7
@@ -176,8 +177,6 @@ botonEj1P5.addEventListener("click", () => {
 
 
 // Comprobacion Ejercicio 2
-
-
     const acordeonEj2 = document.getElementById("Ejercicio2Item");
     acordeonEj2.addEventListener("show.bs.collapse", () => {
         console.clear();
@@ -188,6 +187,6 @@ botonEj1P5.addEventListener("click", () => {
         miBanco.actualizarCuenta(11111, 55);
         miBanco.actualizarCuenta(33333, 66);
         const contenedorEj2 = document.getElementById("resultadoEj2");
-        contenedorEj2.innerHTML = "";
+        contenedorEj2.lastChild.remove();
         contenedorEj2.appendChild(miBanco.listarCuentas());
     });
