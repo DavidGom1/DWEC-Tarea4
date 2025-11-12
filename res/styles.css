@@ -6,6 +6,8 @@
     --bs-body-bg: #fcfaf2;
     --bs-body-color: #212529;
     --font-family: System-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --navbar-height: 56px;
+    --footer-height: 56px;
 }
 
 html {
@@ -14,4 +16,9 @@ html {
 
 .accordion {
     --bs-accordion-bg: #ffffff;
+}
+
+main {
+    height: calc(100dvh - var(--navbar-height) - var(--footer-height));
+    overflow-y: auto;
 }

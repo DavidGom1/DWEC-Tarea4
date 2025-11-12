@@ -13,15 +13,14 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top p-0">
         <div class="container-fluid">
             <h1 class="text-white">Tarea 4 - DWEC</h1>
         </div>
     </nav>
     <!-- CONTENIDO -->
-    <div class="d-flex justify-content-center align-items-center flex-column gap-5"
-        style="height: 100vh; padding-top: 56px; padding-bottom: 56px;">
-        <div class="accordion" id="accordionEjercicios" style="width: 50%;">
+    <main class="d-flex justify-content-center align-items-center flex-column gap-3">
+        <div class="accordion col-lg-6 col-md-8 col-10" id="accordionEjercicios">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed bg-secondary text-white " type="button"
@@ -29,8 +28,7 @@
                         Ejercicio 1
                     </button>
                 </h2>
-                <div id="Ejercicio1" class="accordion-collapse collapse" data-bs-parent="#accordionEjercicios"
-                    style="padding : 2rem;">
+                <div id="Ejercicio1" class="accordion-collapse collapse p-sm-5" data-bs-parent="#accordionEjercicios">
                     <div class="accordion-body">
                         <p>Abre DevTools con <kbd>F12</kbd> o <kbd>Ctrl+Shift+I</kbd> (Windows/Linux) o
                             <kbd>Cmd+Option+I</kbd> (Mac) para ver el resultado del Ejercicio 1.
@@ -191,7 +189,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <!-- FOOTER -->
     <div class="bg-light text-center fixed-bottom">
         <div class="text-center p-3 bg-primary text-white">
