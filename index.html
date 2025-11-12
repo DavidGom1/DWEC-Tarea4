@@ -46,9 +46,9 @@
                             <div id="Ej1P1" class="accordion-collapse collapse" data-bs-parent="#Ejercicio1Puntos"
                                 style="padding : 1rem;">
                                 <div class="accordion-body">
-                                    <div class="d-flex flex-column gap-5">
+                                    <div class="d-flex flex-column gap-3">
                                         <p>Filtro por tipo y precio máximo.</p>
-                                        <div class="container d-flex flex-row gap-5">
+                                        <div class="container d-flex flex-row gap-3">
                                             <div class="container d-flex flex-column">
                                                 <p>Tipo: </p>
                                                 <select id="tipoSelector" class="form-select"
@@ -61,7 +61,7 @@
                                             </div>
                                             <div class="container d-flex flex-column">
                                                 <label for="range" class="form-label">Precio máximo:</label>
-                                                <input type="range" class="form-range" min="0" max="300" value="100"
+                                                <input title="range" type="range" class="form-range" min="0" max="300" value="100"
                                                     step="25" id="rangePrecio">
                                                 <output for="range" id="rangeValue" aria-hidden="true"></output>
                                             </div>
@@ -126,7 +126,7 @@
                             <div id="Ej1P4" class="accordion-collapse collapse" data-bs-parent="#Ejercicio1Puntos">
                                 <div class="accordion-body">
                                     <p>Resumen por tipo: cantidad y precio medio.</p>
-                                    <div class="d-flex flex-column gap-5">
+                                    <div class="d-flex flex-column gap-3">
                                         <div class="container d-flex flex-column w-50">
                                             <p>Tipo: </p>
                                             <select id="tipoSelectorEj1P4" class="form-select"
@@ -155,7 +155,7 @@
                             <div id="Ej1P5" class="accordion-collapse collapse" data-bs-parent="#Ejercicio1Puntos">
                                 <div class="accordion-body">
                                     <p>Reordenar por precio.</p>
-                                    <div class="d-flex flex-column gap-5">
+                                    <div class="d-flex flex-column gap-3">
                                         <div class="container d-flex flex-column w-50">
                                             <p>Orden: </p>
                                             <select id="selectorEj1P5" class="form-select"
@@ -175,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" id="Ejercicio2Item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed bg-secondary text-white" type="button"
                         data-bs-toggle="collapse" data-bs-target="#Ejercicio2">
@@ -183,8 +183,7 @@
                     </button>
                 </h2>
                 <div id="Ejercicio2" class="accordion-collapse collapse" data-bs-parent="#accordionEjercicios">
-                    <div class="accordion-body">
-                        <p>Consulta la consola del navegador para ver el resultado del Ejercicio 2.</p>
+                    <div class="accordion-body" id="resultadoEj2">
                     </div>
                 </div>
             </div>
